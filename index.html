@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creed’s Picks — Tech & Everyday Finds</title>
+  <meta name="description" content="Creed’s Picks: tech and everyday Amazon finds I actually like and use." />
+  <style>
+    :root{
+      --bg:#ffffff;         /* page background */
+      --text:#111111;       /* main text */
+      --muted:#6b7280;      /* gray text */
+      --line:#e5e7eb;       /* divider */
+      --accent:#7a0a2a;     /* maroon */
+      --accent-600:#640823; /* darker maroon */
+    }
 
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Top Nav */
+    .nav{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter: blur(6px);border-bottom:1px solid var(--line);z-index:50}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .brand span{color:var(--accent)}
+    .nav a{font-weight:600;text-decoration:none}
+    .nav-links{display:flex;gap:18px}
+
+    /* Hero */
+    .hero{padding:64px 24px 40px}
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px}
+    .hero p{color:var(--muted);max-width:60ch}
+    .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:12px 18px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border:1px solid var(--accent-600)}
+    .cta:hover{background:var(--accent-600)}
+
+    /* Section */
+    .section{padding:28px 24px}
+    .section h2{font-size:clamp(22px,3.5vw,30px);margin:0 0 8px}
+    .sub{color:var(--muted);margin:0 0 14px}
+    .divider{height:1px;background:var(--line);margin:22px 0}
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .col-12{grid-column:span 12}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    @media (max-width:900px){.col-4{grid-column:span 6}}
+    @media (max-width:640px){.col-6,.col-4{grid-column:span 12}}
+
+    /* Card */
+    .card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+    .card .img{aspect-ratio: 16/10; background:#f8fafc}
+    .card .body{padding:14px}
+    .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);background:#fff1f5;border:1px solid #fde2e7;border-radius:999px;padding:4px 8px;margin-bottom:8px}
+    .title{font-weight:700;margin:6px 0}
+    .desc{color:var(--muted);font-size:14px;line-height:1.4}
+    .btn{margin-top:12px;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border:1px solid var(--accent-600)}
+    .btn:hover{background:var(--accent-600)}
+    .price{margin-top:10px;font-weight:800}
+
+    /* About & Contact */
+    .about{display:grid;grid-template-columns: 1.2fr 2fr;gap:18px}
+    @media (max-width:900px){.about{grid-template-columns:1fr}}
+    .about .box{border:1px solid var(--line);border-radius:16px;padding:16px}
+
+    .socials{display:flex;gap:12px;margin-top:8px}
+    .icon{width:20px;height:20px}
+    .link{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:700}
+    .link:hover{border-color:var(--accent)}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:22px 24px;color:var(--muted);font-size:14px}
+
+    /* Smooth scroll */
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <div class="brand">Creed’s <span>Picks</span></div>
+      <div class="nav-links">
+        <a href="#picks">Picks</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero container">
+    <h1>Tech & Everyday Finds I Actually Use</h1>
+    <p>Curated gadgets, accessories, and affordable daily carries. Easy wins only — no fluff. Updated regularly.</p>
+    <a class="cta" href="https://www.amazon.com/shop/YOUR_ALIAS_OR_LINK?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">Shop My Amazon Picks</a>
+  </header>
+
+  <div class="divider container" role="separator"></div>
+
+  <!-- PICKS -->
+  <section id="picks" class="section container">
+    <h2>Featured Picks</h2>
+    <p class="sub">Swap each button link with your real Amazon Associate URL (with <strong>?tag=YOUR_AMAZON_TAG</strong>).</p>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=Wireless+Earbuds" alt="Wireless Earbuds placeholder" />
+        <div class="body">
+          <span class="tag">Audio</span>
+          <h3 class="title">Wireless Earbuds (Budget)</h3>
+          <p class="desc">Reliable Bluetooth buds with punchy bass, USB‑C charging, and IPX5 sweat resistance. Great for school, gym, or commuting.</p>
+          <div class="price">$24–$39</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0XXXXXXX?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=Smartwatch" alt="Smartwatch placeholder" />
+        <div class="body">
+          <span class="tag">Wearables</span>
+          <h3 class="title">Fitness Smartwatch</h3>
+          <p class="desc">Tracks steps, HR, sleep, and workouts — solid battery life and notifications without breaking the bank.</p>
+          <div class="price">$45–$99</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0YYYYYYY?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=Phone+Stand" alt="Phone Stand placeholder" />
+        <div class="body">
+          <span class="tag">Desk</span>
+          <h3 class="title">Adjustable Phone Stand</h3>
+          <p class="desc">Metal stand with height/angle adjust and cable pass‑through. Clean your desk setup for FaceTime, Zoom, and streaming.</p>
+          <div class="price">$9–$16</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0ZZZZZZZ?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=Gaming+Headset" alt="Gaming Headset placeholder" />
+        <div class="body">
+          <span class="tag">Gaming</span>
+          <h3 class="title">Wired Gaming Headset</h3>
+          <p class="desc">Comfortable over‑ear headset with noise‑isolating mic and clear stereo for console and PC.</p>
+          <div class="price">$22–$39</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0AAAAAAA?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=Portable+Charger" alt="Portable Charger placeholder" />
+        <div class="body">
+          <span class="tag">Power</span>
+          <h3 class="title">Portable Charger (10–20k mAh)</h3>
+          <p class="desc">Slim PD power bank with USB‑C in/out. Keep your phone and earbuds alive on meet days.</p>
+          <div class="price">$18–$39</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0BBBBBBB?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card col-4">
+        <img class="img" src="https://placehold.co/800x500/png?text=USB-C+Hub" alt="USB‑C Hub placeholder" />
+        <div class="body">
+          <span class="tag">Laptop</span>
+          <h3 class="title">USB‑C Hub (HDMI + SD)</h3>
+          <p class="desc">Expand a single USB‑C into HDMI, USB‑A, and SD for school or gaming setup flexibility.</p>
+          <div class="price">$19–$35</div>
+          <a class="btn" href="https://www.amazon.com/dp/B0CCCCCCC?tag=YOUR_AMAZON_TAG" target="_blank" rel="sponsored noopener">View on Amazon</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider container" role="separator"></div>
+
+  <!-- ABOUT & CONTACT -->
+  <section id="about" class="section container">
+    <h2>About Creed</h2>
+    <p class="sub">Sprinter • Jumper • Tech fan. I share practical gear and budget gadgets that make everyday life smoother.</p>
+
+    <div class="about">
+      <div class="box">
+        <h3 style="margin-top:0">Why these picks?</h3>
+        <p style="color:var(--muted)">I choose items that are reliable, affordable, and easy to recommend to teammates and friends. If I wouldn’t use it, it doesn’t make the list.</p>
+        <ul style="margin:0 0 0 18px; line-height:1.7">
+          <li>Budget first, quality always</li>
+          <li>Fast shipping + easy returns</li>
+          <li>Updated as I test new gear</li>
+        </ul>
+      </div>
+      <div class="box" id="contact">
+        <h3 style="margin-top:0">Contact</h3>
+        <p class="sub" style="margin:0 0 10px">Business or collabs? Hit me here:</p>
+        <div class="socials">
+          <a class="link" href="mailto:youremail@example.com">✉️ Email</a>
+          <a class="link" href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">IG</a>
+          <a class="link" href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p><strong>Affiliate Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases. Prices shown are estimates and may change. Links may be affiliate links.</p>
+    <p style="margin-top:6px">© <span id="year"></span> Creed’s Picks. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // set year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
